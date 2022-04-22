@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#05DBF2"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="105dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="272dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:background="#0388A6"
+                android:text="CALCULADORA APP"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="93dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/matematicas" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/txtNombreUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#0388A6"
+                android:ems="10"
+                android:hint="Ingrese su nombre"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/white"
+                android:textColorLink="@color/white"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnCalcularImc"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="64dp"
+                android:backgroundTint="#F2E750"
+                android:text="@string/imc"
+                app:icon="@drawable/cuerpo_humano"
+                app:iconPadding="@dimen/cardview_default_elevation"
+                app:iconTintMode="multiply" />
+
+            <Button
+                android:id="@+id/btnTemperatura"
+                android:layout_width="match_parent"
+                android:layout_height="71dp"
+                android:layout_marginTop="80dp"
+                android:backgroundTint="#0378A6"
+                android:text="@string/conver"
+                app:icon="@drawable/termometro"
+                app:iconTintMode="multiply" />
+
+            <Button
+                android:id="@+id/btnCalculadora"
+                android:layout_width="match_parent"
+                android:layout_height="69dp"
+                android:layout_marginTop="80dp"
+                android:backgroundTint="#F29985"
+                android:text="@string/calculadora"
+                app:icon="@drawable/calcularc"
+                app:iconTintMode="multiply" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

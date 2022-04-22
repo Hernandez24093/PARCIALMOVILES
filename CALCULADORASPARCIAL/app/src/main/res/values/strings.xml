@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Calcuadora</string>
+    <string name="calBasica">Calculadora Básica</string>
+    <string name="operacion">Operación a Realizar:</string>
+    <string name="valor1">Ingrese valor 1</string>
+    <string name="valor2">Ingrese valor 2</string>
+    <string name="resultado">Resultado</string>
+    <string name="imc">Calculadora IMC</string>
+    <string name="calculadora">Calculadora</string>
+    <string name="conver">Conversor</string>
+
+    <string-array name="oper">
+        <item>Suma</item>
+        <item>Resta</item>
+        <item>Multiplicacion</item>
+        <item>Division</item>
+    </string-array>
+    <string name="btnCalcular">Calcular</string>
+    <string name="calImc">Calculadora IMC</string>
+    <string name="peso">Ingrese Peso:</string>
+    <string name="estatura">Ingrese Estatura:</string>
+    <string name="conversor">Conversor Temperatura</string>
+    <string name="valor">Valor a convertir</string>
+    <string-array name="temperatura">
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+        <item>Kelvin</item>
+        <item>Rankine</item>
+    </string-array>
+    <string name="convertir">Convertir a:</string>
+    <string name="btnConvertir">Convertir</string>
+</resources>

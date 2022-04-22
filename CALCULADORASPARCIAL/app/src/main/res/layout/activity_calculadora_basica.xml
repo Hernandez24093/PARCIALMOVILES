@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#05DBF2"
+    tools:context=".calculadoraBasica">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="422dp"
+            android:layout_height="62dp">
+
+            <TextView
+                android:layout_width="321dp"
+                android:layout_height="match_parent"
+                android:background="#0388A6"
+                android:text="CALCULADORA BSC"
+
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/calculadora" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#0388A6"
+                android:text="@string/calBasica"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:text="Name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/TextValor1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="25sp"
+                    android:background="#0378A6"
+                    android:ems="10"
+                    android:hint="@string/valor1"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textColorHighlight="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textColorLink="@color/white" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:layout_marginTop="25sp"
+                    android:background="#0388A6"
+                    android:text="@string/operacion"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/TextValor2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="25sp"
+                    android:background="#0378A6"
+                    android:ems="10"
+                    android:hint="@string/valor2"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textColorHighlight="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textColorLink="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="203dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/operacion"
+                    style="@android:style/Widget.Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100sp"
+                    android:layout_marginBottom="100sp"
+                    android:entries="@array/oper"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/btnCalc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#F2E750"
+                    android:text="@string/btnCalcular"
+                    app:icon="@drawable/calcularc"
+                    app:iconTintMode="multiply" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
